@@ -1,0 +1,128 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #191919;
+}
+
+.string {
+  font-style: italic;
+  color: #2E8C3C;
+}
+
+.comment {
+  font-style: italic;
+  color: #3D5473;
+}
+
+.constant.numeric {
+  font-weight: bold;
+  color: #2E8C3C;
+}
+
+.constant.language {
+  color: #6D3879;
+}
+
+.constant.character, .constant.other {
+  color: #624EA8;
+}
+
+.variable.language, .variable.other {
+  color: #3D54B0;
+}
+
+.keyword {
+  font-weight: bold;
+  color: #6986BF;
+}
+
+.storage {
+}
+
+.entity.name.class {
+  color: #3D5473;
+}
+
+.entity.other.inherited-class {
+  color: #A75C57;
+}
+
+.entity.name.function {
+  font-weight: bold;
+  color: #6248A8;
+}
+
+.variable.parameter {
+  color: #A7575C;
+}
+
+.entity.name.tag {
+}
+
+.entity.other.attribute-name {
+}
+
+.support.function {
+  color: #404251;
+}
+
+.support.constant {
+}
+
+.support.type, .support.class {
+  color: #3D5473;
+}
+
+.support.other.variable {
+}
+
+.invalid {
+}
